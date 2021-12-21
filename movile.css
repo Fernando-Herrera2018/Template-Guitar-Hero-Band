@@ -1,0 +1,230 @@
+/*Mediaqueries*/
+@media screen and (max-width: 1000px) {
+  .seccion8 .article1-informacion {
+    width: 100%;
+    height: 100%;
+  }
+  .seccion8 .article2-imagenes {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .estructuramodal {
+    margin-left: 20%;
+    width: 200px;
+  }
+}
+/*Movil*/
+@media screen and (max-width: 410px) {
+  .header2 {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+  .header2 img {
+    width: 400px;
+    height: 100%;
+  }
+  .header2-nav {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  /*Header3 Menu*/
+  .header3 {
+    margin-bottom: 0px;
+  }
+  .header3-nav #iconomenu {
+    display: block;
+  }
+  .header3-nav ul {
+    background-color: var(--negrobajo);
+  }
+  .header3-nav .cuadrado {
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    background-color: #3334;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header3-nav .contenedormenu {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .header3-nav .contenedormenu li {
+    width: 100%;
+  }
+  .header3-nav .contenedormenu a {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 3px white dotted;
+  }
+  .header3-nav #menu {
+    display: none;
+  }
+
+  /*Seccion 2 Modal boton hover video responsivo grid*/
+  .seccion2 {
+    grid-template: repeat(2, auto) / auto;
+    grid-template-areas: "Imagen1" "seccion2-feautures";
+  }
+  .seccion2 div img {
+    width: 350px;
+  }
+  .seccion2 .Imagen1 figure {
+    width: 350px;
+  }
+  .seccion2 .seccion2-feautures {
+    width: 350px;
+  }
+  .seccion2 .seccion2-feautures h2 {
+    padding-left: 0px;
+  }
+  .seccion2 .seccion2-feautures h3 {
+    padding-left: 0px;
+  }
+  .seccion2 .seccion2-feautures p {
+    padding-left: 0px;
+  }
+  .seccion2 .seccion2-feautures div {
+    padding-left: 0px;
+  }
+  /*Section8 Modal Hover*/
+  .estructuramodal {
+    width: 330px;
+    margin-top: 35%;
+    margin-left: 7%;
+  }
+
+  /*Seccion 3*/
+  .seccion3 {
+    height: 1300px;
+  }
+  .seccion3 .contenedor {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .seccion3 h2 {
+    text-align: center;
+  }
+  .seccion3 h3 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .seccion3 .contenedor p {
+    padding-top: 10px;
+    color: black;
+    text-align: center;
+  }
+  .seccion3 #galeria .contenedor-figure {
+    text-align: center;
+  }
+  .seccion3 #galeria figure img {
+    text-align: center;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+  /*Seccion 5 Transition Transform*/
+  .seccion5 .parallaxs h2 {
+    top: 40%;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .seccion5 .parallaxs p {
+    display: none;
+  }
+  .seccion5 .parallaxs a {
+    position: absolute;
+    z-index: 3;
+    top: 70%;
+    left: 50%;
+  }
+  /*Seccion 6 Banner Modal Hover*/
+  .seccion6 a {
+    margin-left: 0px;
+  }
+  /*Seccion 7 Tabs acordeon*/
+  .skills {
+    display: none;
+  }
+  .content-skills figure {
+    width: 100%;
+  }
+  .content-skills figure img {
+    width: 340px;
+  }
+  /* responsive del carrousel */
+  .contenedor_flechas {
+    width: 100%;
+    gap: 50px;
+  }
+  .viewport {
+    width: 80%;
+  }
+
+  /* responsive footer */
+  .contenedor-superior {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    height: 900px;
+  }
+  .contenedor-superior .about {
+    width: 90%;
+    height: 200px;
+  }
+  .contenedor-superior .Recent {
+    width: 90%;
+    gap: 20px;
+    height: 200px;
+  }
+
+  .contenedor-medio {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    height: 100px;
+  }
+  .contenedor-medio .btnfoot {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+  }
+  .contenedor-medio .iconofoot {
+    gap: 30px;
+  }
+  .contenedor-inferior {
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 150px;
+    flex-direction: column;
+  }
+  /*Seccion contacto*/
+
+  .btn_send {
+    margin-left: 90px;
+  }
+  .fondo {
+    display: none;
+  }
+  #fondo {
+    display: none;
+  }
+  .formulario_Ayuda {
+    padding-top: 60px;
+    padding-left: 30px;
+    width: 350px;
+    height: 600px;
+  }
+}

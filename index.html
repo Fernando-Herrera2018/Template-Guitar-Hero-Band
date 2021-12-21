@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="movile.css">
+    <link rel="stylesheet" href="estilo_SLIDE.css">
+    <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+    <link href="https://fonts.googleapis.com/css?family=Abel|Oswald" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+    <script src="js/jquery.tinycarousel.js"></script>
+    <script src="js/wow.min.js"></script>
+    <!--Scroll efect-->
+    <script src="js/jquery.scrollUp.js"></script>
+    <script>
+        $(function () {
+            $.scrollUp({
+                scrollImg: true
+            });
+        });
+    </script>
+    <!--Termina script efect-->
+    <title>Guitar Band - Cool Music School HTML Landing Page Template </title>
+</head>
+
+<body>
+    <header class="header2 ancho">
+        <figure><a href="#"><img src="imagenes/logo_guitar.png" alt=""></a></figure>
+        <nav class="header2-nav">
+            <div class="header2-nav-icons">
+                <i class="icono-tel fas fa-phone-alt fa-2x"></i>
+            </div>
+            <ul>
+                <li>
+                    <p>1-800-1234-567</p>
+                    <p>1-800-8763-765</p>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header2-nav">
+            <div class="header2-nav-icons">
+                <i class="icono-location fas fa-map-marker-alt  fa-2x"></i>
+            </div>
+            <ul>
+                <li>
+                    <p>2130 Fulton Street San </p>
+                    <p>Diego, CA 94117-1080</p>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header2-nav">
+
+            <ul>
+                <div class="btn-header2">
+                    <a href="#" class="animate__bounceInUp animate__delay-5s">BOOK A LESSON</a>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+    <header class="header3">
+        <nav class="header3-nav ancho">
+            <a class="cuadrado" href="#"><i id="iconomenu" class="fas fa-bars fa-2x"></i></a>
+            <ul id="menu" class="contenedormenu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">GROUPS</a></li>
+                <li><a href="#">TESTIMONIALS</a></li>
+                <li><a href="#">TEACHERS</a></li>
+                <li><a href="#">EVENTS</a></li>
+                <li><a href="#">CONTACTS</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Funcion js para el menu responsivo-->
+    <script>
+        $("#iconomenu").click(function () {
+            $("#menu").slideToggle();
+        });
+    </script>
+
+
+
+    <!--Script Slider-->
+    <script>
+        $(function () {
+            $("#slider4").responsiveSlides({
+                auto: false,
+                pager: false,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+            });
+        });
+    </script>
+    <!--Seccion 1 del Slider-->
+    <section class="seccion1" id="contenedorslide">
+        <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+                <li class="cajatexto">
+                    <img src="imagenes/slide1.jpg" alt="" />
+                </li>
+                <li class="cajatexto">
+                    <img src="imagenes/slide2.jpg" alt="" />
+                </li>
+                <li class="cajatexto">
+                    <img src="imagenes/slide3.jpg" alt="" />
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--Seccion 2 Modal boton hover video responsivo grid-->
+    <section class="seccion2 ancho">
+        <div class="seccion2-feautures">
+            <h2>Welcome to Guitar Band!</h2>
+            <p>Guitar Band Music School offers comprehensive guitar lessons that start with the fundamentals, including
+                scales, chords, tuning, arpeggios, and rhythm adapted to various skill levels.
+                Our core philosophy is that the best way for students to gain musical proficiency is through
+                performance-based music education. All of our lessons for guitar students include a performance aspect.
+            </p>
+            <div class="btn-grid">
+                <a id="Btn3" class="hvr-bounce-to-bottom wow animate__animated animate__backInDown">INFO VIDEO</a>
+            </div>
+        </div>
+        <div class="Imagen1">
+            <a href="#"><img src="imagenes/imagenGrid.jpg" alt=""></a>
+        </div>
+    </section>
+    <!-- Script modal -->
+    <section id="modal" class="contenidomodal">
+        <div class="estructuramodal ancho">
+            <div class="titulo">
+                <i id="cerrarbtn" class="rojo fas fa-times-circle"></i>
+            </div>
+            <div class="">
+                <h2>Contact Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet consequatur </p>
+                <article>
+                    <div id="contenedoryoutube">
+                        <iframe src="https://www.youtube.com/embed/hsRpQeaVIlY" frameborder="0" allowfullscreen>
+                        </iframe>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- funcion modal -->
+    <script>
+        var mostrarmodal = document.getElementById("modal");
+        var cerrarmodal = document.getElementById("cerrarbtn");
+        var btnejecutar = document.getElementById("Btn3");
+
+        btnejecutar.onclick = function () {
+            mostrarmodal.style.display = "block";
+        }
+
+        cerrarmodal.onclick = function () {
+            mostrarmodal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == mostrarmodal) {
+                mostrarmodal.style.display = "none";
+            }
+        };
+    </script>
+    <!-- funcion modal -->
+
+    <!--Sección 3 Gallery Transition -->
+
+    <section class="seccion3">
+        <h2>Guitar Groups</h2>
+        <section id="galeria" class="fond ancho">
+            <div class="contenedor-figure">
+                <figure>
+                    <a class="fancybox" rel="gallery1" href="imagenes/galeria1.jpg" title="FOTO1">
+                        <img src="imagenes/galeria1.jpg" alt="" /></a>
+                    <a class="fancybox" rel="gallery1" href="imagenes/galeria2.jpg" title="FOTO2">
+                        <img src="imagenes/galeria2.jpg" alt="" /></a>
+                    <a class="fancybox" rel="gallery1" href="imagenes/galeria3.jpg" title="FOTO3">
+                        <img src="imagenes/galeria3.jpg" alt="" /></a>
+                    <a class="fancybox" rel="gallery1" href="imagenes/galeria4.jpg" title="FOTO4">
+                        <img src="imagenes/galeria4.jpg" alt="" /></a>
+                </figure>
+            </div>
+        </section>
+    </section>
+
+    <!--Sección 3 Gallery-->
+
+    <!--sección 5 Transition Transform y Hover-->
+    <section class="seccion5 ancho">
+        <section class="parallaxs">
+            <div class="filtro"></div>
+            <h2>Choose the Best <br>
+                Time for Lessons</h2>
+            <p>Our students can select any time for their lessons that fits their timetable, whether it’s a weekday
+                evening or weekend morning.</p>
+            <a href="#" class="btn-parallaxs  animate__animated animate__bounceInUp animate__delay-5s">READ MORE</a>
+        </section>
+    </section>
+
+    <!--sección 5 Transition Transform y Hover-->
+
+    <!--sección 6 Banner Modal Hover-->
+    <section class="seccion6">
+        <div class="btn-header2">
+            <a href="#" class="wow animate__animated animate__backInDown">BOOK A LESSON</a>
+        </div>
+    </section>
+    <!--sección 6 Banner Modal Hover-->
+
+    <!--sección 7 Tabs acordeon-->
+    <section class="section-acordeon ancho">
+        <div class="questions-acordeon">
+            <h2>Frequently Asked Questions</h2>
+            <div class="content-acordeon">
+                <div id="acordeon" class="acordeon">
+                    <div class="acordeon-titulo">
+                        <i id="icono" class="mas fas fa-plus-square"></i>
+                        <h3>Do you provide any scripts with your templates?</h3>
+                    </div>
+                    <article class="informacion">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                            impedit
+                            nisi dignissimos,
+                            consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                            accusantium adipisci
+                            blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                            optio
+                            voluptate vitae
+                            magnam. Error porro ea eveniet.
+                        </p>
+                    </article>
+                </div>
+                <div id="acordeon" class="acordeon">
+                    <div class="acordeon-titulo">
+                        <i id="icono" class="mas fas fa-plus-square"></i>
+                        <h3>What do I receive when I order a template</h3>
+                    </div>
+                    <article class="informacion">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                            impedit
+                            nisi dignissimos,
+                            consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                            accusantium adipisci
+                            blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                            optio
+                            voluptate vitae
+                            magnam. Error porro ea eveniet.
+                        </p>
+                    </article>
+                </div>
+                <div id="acordeon" class="acordeon">
+                    <div class="acordeon-titulo">
+                        <i id="icono" class="mas fas fa-plus-square"></i>
+                        <h3>In what formats are you template available?</h3>
+                    </div>
+                    <article class="informacion">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                            impedit
+                            nisi dignissimos,
+                            consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                            accusantium adipisci
+                            blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                            optio
+                            voluptate vitae
+                            magnam. Error porro ea eveniet.
+                        </p>
+                    </article>
+                </div>
+                <div id="acordeon" class="acordeon">
+                    <div class="acordeon-titulo">
+                        <i id="icono" class="mas fas fa-plus-square"></i>
+                        <h3>What am I allowed to do with the templates</h3>
+                    </div>
+                    <article class="informacion">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, veniam quasi doloremque
+                            impedit
+                            nisi dignissimos,
+                            consequuntur neque expedita vitae provident cupiditate corrupti asperiores error quas quos
+                            accusantium adipisci
+                            blanditiis quam. Officia ipsa dolor laborum veniam, a, porro labore illo sit itaque, ut
+                            optio
+                            voluptate vitae
+                            magnam. Error porro ea eveniet.
+                        </p>
+                    </article>
+                </div>
+
+            </div>
+        </div>
+
+        <!--División-->
+        <div class="skills">
+            <h2>Music Stores</h2>
+            <div class="content-skills">
+                <figure>
+                    <img src="imagenes/ardemadrid.jpg" alt="" />
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $('.acordeon-titulo').click(function () {
+            var t = $(this);
+            var icon = t.children('#icono');
+            var tp = t.next();
+            tp.slideToggle();
+            icon.toggleClass('fa-plus-square fa-minus-square');
+        });
+    </script>
+
+
+
+    <!-- script del carrousel -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#slider1").tinycarousel();
+        });
+    </script>
+    <!-- maquetacion del Carrusel -->
+    <section id="slider1" class="ancho-carrusel">
+        <h3>Our Teachers</h3>
+        <div class="contenedor_flechas">
+            <div class="cont_flechas">
+                <a class="buttons prev" href="#">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>
+
+            <div class="cont_flechas">
+
+                <a class="buttons next" href="#">
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="viewport">
+            <div class="overview">
+                <article class="cards">
+                    <figure class="banner">
+                        <img src="imagenes/team-1.jpg" alt="" />
+                        <!--Efecto position absolute en el over-->
+                        <div class="info">
+                            <i class="guitar fas fa-guitar"></i>
+                        </div>
+                    </figure>
+                    <h2>Nathalie Porter</h2>
+                    <p>Founder, Guitar Theory Teacher</p>
+                </article>
+
+                <article class="cards">
+                    <figure class="banner">
+                        <img src="imagenes/team-2.jpg" alt="" />
+                        <div class="info">
+                            <i class="guitar fas fa-guitar"></i>
+                        </div>
+                    </figure>
+                    <h2>John Thompson</h2>
+                    <p> Lead Guitar Teacher</p>
+                </article>
+
+                <article class="cards">
+                    <figure class="banner">
+                        <img src="imagenes/team-3.jpg" alt="" />
+                        <div class="info">
+                            <i class="guitar fas fa-guitar"></i>
+                        </div>
+                    </figure>
+                    <h2>Mary Williams</h2>
+                    <p>Rhythm Guitar Teacher</p>
+                </article>
+                <article class="cards">
+                    <figure class="banner">
+                        <img src="imagenes/team-4.jpg" alt="" />
+                        <div class="info">
+                            <i class="guitar fas fa-guitar"></i>
+                        </div>
+                    </figure>
+                    <h2>Sam Clarke</h2>
+                    <p>Blues Guitar Teacher</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contenedor_contact ancho">
+        <div id="formulario_Uno">
+            <div class="formulario_Ayuda">
+                <h2>CONTACT US</h2>
+                <br>
+                <form action="raw_enviar_mailer.php" method="POST" class="">
+
+                    <input class="entrada" name="nombre" type="text" placeholder="Name*" required>
+                    <input class="entrada" name="correo" type="email" id="email" placeholder="Email*" required>
+                    <input class="entrada" name="telefono" type="phone" id="phone" placeholder="Phone*" required>
+                    <textarea class="entrada" name="mensaje" id="" placeholder="Message" cols="30" rows="10"
+                        required></textarea>
+                    <button type="submit" class="btn_send"> SEND</button>
+                    <p>Or use</p>
+                    <a href="https://www.messenger.com/" class="btn_send btn_a" id="btn_transp">
+                        <i id="icon_rojo" class="fab fa-facebook-messenger fa-1x"></i> MESSENGER</a>
+                </form>
+            </div>
+        </div>
+        <div id="fondo" class="fondo">
+            <img src="imagenes/guitarh.jpg" alt="">
+        </div>
+        </div>
+    </section>
+
+
+    <!-- maquetacion del footer -->
+    <footer>
+        <div class="contenedor-superior">
+            <div class="about">
+                <h2>About Us</h2>
+                <br>
+                <p>
+                    Our guitar school was founded in 1999 to help students of all ages and skill levels to pursue their
+                    dream of becoming guitar players. If you would like to learn how to play the world’s most popular
+                    instrument, our school is the place for you, regardless of your age and social status. We offer
+                    group and private lessons for children and adults.
+                </p>
+            </div>
+            <div class="Recent">
+                <h2>Recent Blog Posts</h2>
+                <p>
+                    Using Minor Pentatonic Over Major Chords Theory Explained
+                </p>
+                <p>by Theresa Barnes 2 days ago </p>
+                <p>
+                    Ear Training Basics and Choosing The Right Instrument
+                </p>
+                <p>by Theresa Barnes 2 days ago </p>
+            </div>
+        </div>
+        <div class="contenedor-medio">
+
+            <div class="btnfoot">
+                <h5>HOME</h5>
+                <h5>ABOUT</h5>
+                <h5>CLASSES</h5>
+                <h5>GALERY</h5>
+                <h5>BLOG</h5>
+                <h5>CONTACTS</h5>
+            </div>
+
+            <div class="iconofoot">
+                <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="contenedor-inferior">
+            <div class="logofooter">
+                <img src="imagenes/logo-inverse-254x61.png" alt="">
+            </div>
+            <div class="copyr">
+                © 2021 All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>
